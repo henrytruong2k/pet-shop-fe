@@ -1,6 +1,1 @@
-
-export const loginService = async params => {
-
-}
-
-
+export const loginService = async params => {}

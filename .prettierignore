@@ -1,0 +1,16 @@
+.yarn
+.next
+dist
+node_modules
+out
+public
+styles
+package.json
+package-lock.json
+.dockerignore
+.env.local
+.gitignore
+.gitlab-ci.yml
+docker-compose.yml
+DockerFile
+jsconfig.json

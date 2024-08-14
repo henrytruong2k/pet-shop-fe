@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "next/core-web-vitals", // needed to avoid warning in next.js build: 'The Next.js plugin was not detected in your ESLint configuration'
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["eslint-plugin-prettier"],
+  "rules": {
+    "react/display-name": "off",
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": ["function-declaration", "arrow-function"],
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "eslint-disable-next-line": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "arrowParens": "avoid",
+        "bracketSameLine": false,
+        "bracketSpacing": true,
+        "singleQuote": true,
+        "jsxSingleQuote": true,
+        "proseWrap": "preserve",
+        "semi": false,
+        "printWidth": 120,
+        "endOfLine": "auto"
+      }
+    ]
+  }
+}
